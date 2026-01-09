@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@layer base {
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}
+
+@layer utilities {
+  .animate-spin-slow {
+    animation: spin 1s linear infinite;
+  }
+  
+  .animate-spin-fast {
+    animation: spin 0.5s linear infinite;
+  }
+}
